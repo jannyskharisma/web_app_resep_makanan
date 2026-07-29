@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resep Makan dari Bahan Seadanya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resep Makan dari Bahan Seadanya</h1>
+    <p>Pilih bahan yang kamu punya, kami cari resep yang cocok!</p>
+  </header>
+
+  <main>
+    <section id="ingredient-section">
+      <h2>Pilih Bahan yang Tersedia</h2>
+      <div id="ingredient-list" class="ingredient-grid">
+        <p class="loading">Memuat daftar bahan...</p>
+      </div>
+      <button id="search-btn" class="btn-primary">Cari Resep</button>
+    </section>
+
+    <section id="result-section">
+      <h2>Hasil Pencarian</h2>
+      <div id="result-info"></div>
+      <div id="result-list" class="recipe-grid">
+        <p class="placeholder-text">Pilih bahan dan klik "Cari Resep" untuk mulai.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Capstone Design 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Resep - Resep Makan dari Bahan Seadanya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resep Makan dari Bahan Seadanya</h1>
+    <a href="index.html" class="back-link">&larr; Kembali ke pencarian</a>
+  </header>
+
+  <main>
+    <div id="detail-loading" class="loading">Memuat detail resep...</div>
+    <div id="detail-error" class="error-message" style="display:none;"></div>
+    <article id="detail-content" style="display:none;">
+      <div class="detail-header">
+        <img id="detail-image" src="" alt="Foto resep">
+        <div class="detail-info">
+          <h2 id="detail-nama"></h2>
+          <span id="detail-kategori" class="badge"></span>
+          <p id="detail-waktu"></p>
+          <p id="detail-deskripsi"></p>
+        </div>
+      </div>
+
+      <section id="detail-bahan">
+        <h3>Bahan-bahan</h3>
+        <ul id="bahan-list"></ul>
+      </section>
+
+      <section id="detail-langkah">
+        <h3>Langkah Memasak</h3>
+        <ol id="langkah-list"></ol>
+      </section>
+
+      <div id="detail-video" style="display:none;">
+        <a id="video-link" href="#" target="_blank" class="btn-secondary">Tonton Video Tutorial</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Capstone Design 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
