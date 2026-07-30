@@ -38,11 +38,7 @@ async function loadIngredients() {
       const label = document.createElement('label');
       label.className = 'ingredient-item';
       label.innerHTML = `<input type="checkbox" value="${b.id}"> ${b.nama_bahan}`;
-      label.addEventListener('click', (e) => {
-        if (e.target.tagName !== 'INPUT') {
-          const cb = label.querySelector('input');
-          cb.checked = !cb.checked;
-        }
+      label.addEventListener('change', () => {
         label.classList.toggle('selected', label.querySelector('input').checked);
       });
       list.appendChild(label);
